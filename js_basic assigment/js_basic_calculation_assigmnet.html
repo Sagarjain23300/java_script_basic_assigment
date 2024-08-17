@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f7f7f7;
+        }
+
+        .calculator {
+            border: 2px solid black;
+            padding: 20px;
+            background-color: white;
+            text-align: center;
+        }
+
+        h2 {
+            margin-bottom: 20px;
+        }
+
+        .input-group {
+            margin-bottom: 10px;
+        }
+
+        label {
+            margin-right: 10px;
+        }
+
+        input[type="number"] {
+            width: 230px;
+            padding: 5px;
+            margin-left: 10px;
+        }
+
+        .buttons {
+            margin-top: 10px;
+        }
+
+        button {
+            padding: 10px;
+            margin: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        #result {
+            font-weight: bold;
+            color: blue;
+            font-size: x-large;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="calculator">
+        <h2>Maths Operations</h2>
+        <div class="input-group">
+            <label for="num1">Enter 1st number:</label>
+            <input type="number" id="num1">
+        </div>
+        <div class="input-group">
+            <label for="num2">Enter 2nd number:</label>
+            <input type="number" id="num2">
+        </div>
+        <div class="buttons">
+            <button onclick="calculate('+')">+</button>
+            <button onclick="calculate('-')">-</button>
+            <button onclick="calculate('*')">*</button>
+            <button onclick="calculate('/')">/</button>
+            <button onclick="calculate('%')">%</button>
+        </div>
+        <p>Answer is: <span id="result"></span></p>
+    </div>
+    <script>function calculate(operator) {
+            const num1 = parseFloat(document.getElementById('num1').value);
+            const num2 = parseFloat(document.getElementById('num2').value);
+            let result;
+
+            switch (operator) {
+                case '+':
+                    result = num1 + num2;
+                    break;
+                case '-':
+                    result = num1 - num2;
+                    break;
+                case '*':
+                    result = num1 * num2;
+                    break;
+                case '/':
+                    result = num1 / num2;
+                    break;
+                case '%':
+                    result = num1 % num2;
+                    break;
+                default:
+                    result = 'Invalid value';
+            }
+
+            document.getElementById('result').textContent = result;
+        }
+    </script>
+</body>
+
+</html>

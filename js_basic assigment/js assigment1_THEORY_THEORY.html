@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2 id="dt"></h2>
+
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Form Validation Example</title>
+    </head>
+
+    <body>
+        <h2>Registration Form</h2>
+
+
+        Q.55 Form in Email, number, Password, Validation?
+
+
+        <form id="registrationForm">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <br><br>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required>
+            <br><br>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <br><br>
+
+            <input type="submit" value="Register">
+        </form>
+
+        <p id="errorMessage" style="color: red;"></p>
+
+        <style>
+            .error {
+                color: red;
+            }
+
+            .valid {
+                color: green;
+            }
+        </style>
+        </head>
+<hr>
+        <body>
+            <h2>Dynamic Registration Form</h2>
+            <form id="dynamicForm">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email">
+                <span id="emailMessage" class="error"></span>
+                <br><br>
+
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone">
+                <span id="phoneMessage" class="error"></span>
+                <br><br>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password">
+                <span id="passwordMessage" class="error"></span>
+                <br><br>
+
+                <input type="submit" value="Register">
+            </form>
+
+
+        </body>
+
+    </html>
+
+
+
+</body>
+
+</html>
+
+<script>
+
+    // Q.1 Using console.log() print out the following statement: The quote 'There is no exercise
+    // better for the heart than reaching down and lifting people up.' by John Holmes teaches us
+    // to help one another. Using console.log() print out the following quote by Mother Teresa:
+
+    // let a = "The quote There is no exercisebetter for the heart than reaching down and lifting people up by John Holmes teaches usto help one another"
+
+    // console.log(a);
+
+    // Q.2 Check if typeof '10' is exactly equal to 10. If not make it exactly equal?
+
+    // var b = '10' === 10
+    // console.log(b);
+
+    // false
+
+    // var b = '10' === '10';
+    // console.log(b);
+
+    // true
+
+    // Q.3 Write a JavaScript Program to find the area of a triangle?
+
+
+    // let c
+    // b = 2
+    // h = 8
+    // c = 1 / 2 ** b ** h
+    // console.log(c);
+
+
+    // Write a JavaScript program to calculate days left until next Christmas?
+
+
+    // let d=()
+    // console.log(d);
+
+
+    // Q.5 What is Condition Statement?
+
+    // A condition statement is a programming construct used to perform different actions based on whether a certain condition is true or false. It allows a program to make decisions and execute specific code blocks depending on the evaluation of the condition.
+
+
+    // Q.6 Find circumference of Rectangle formula : f = 4 * e ?
+
+    // let e = parseInt(prompt())
+    // let f = 4 * e;
+
+    // console.log(f);
+
+
+    // Q.7 WAP to convert years into days and days into years?
+
+    // let g = parseInt(prompt())
+    // let a1 = g / 365
+
+    // console.log(a1);
+
+    // let i = parseInt(prompt())
+    // let a2 = i * 365
+    // console.log(a2);
+
+
+    // Q.8 Convert temperature Fahrenheit to Celsius? (Conditional logic Question)
+
+
+    // let a3 = parseInt(prompt())
+
+    // let a4 = (a3 - 32) * 5 / 9
+
+    // console.log(a4);
+
+
+
+    // Q.10 What is the result of the expression (5 > 3 && 2 < 4)?
+
+    // let a5 = (5 > 3 && 2 < 4);
+    // console.log(a5);
+
+    // True
+
+
+    // Q.11 What is the result of the expression (true && 1 && "hello")?
+
+
+
+    // let a6 = (true && 1 && "hello")
+    // console.log(a6);
+
+    // Answer:hello
+
+
+    // Q.12 What is the result of the expression true && false || false && true?
+
+
+    // let a7 = (true && false || false && true)
+
+    // console.log(a7);
+
+    // Answer:False
+
+
+    // Q.13 Check Number Is Positive or Negative in JavaScript?
+
+
+    // let a13 = parseInt(prompt("enter value to find positive or nagative"))
+
+
+    // if (a13 >= 0) {
+
+    //     console.log("positive");
+    // }
+    // else {
+
+    //     console.log("nagative");
+
+    // }
+
+
+
+    // Q.14 Find the Character Is Vowel or Not ?
+
+    // let a14 = (prompt("enter your value to find cerector type"))
+    // switch (a14) {
+    //     case `a`:
+    //         console.log("vowel ");
+    //         break;
+    //     case 'e':
+    //         console.log(" vowel ");
+    //         break;
+    //     case 'i':
+    //         console.log("vowel ");
+    //         break;
+    //     case 'o':
+    //         console.log(" vowel ");
+    //         break;
+    //     case 'u':
+    //         console.log(" vowel ");
+    //         break;
+
+    //     default:
+    //         console.log("not a vowel ");
+    //         break;
+    // }
+
+
+    // Q.15 Write to check whether a number is negative, positive or zero?
+
+    // let a13 = parseInt(prompt("enter value to find positive or nagative"))
+
+
+    // if (a13 > 0) {
+
+    //     console.log("positive");
+    // }
+
+    // else if (a13 == 0)
+
+    //         { console.log("zero"); }
+
+
+    // else {
+
+    //     console.log("nagative");
+
+    // }
+
+
+    // Q.16 Write to find number is even or odd using ternary operator in JS?
+
+    // let a13 = parseInt(prompt("enter value to find positive or nagative"))
+
+
+    // if (a13 % 2 == 0) {
+
+    //     console.log("even");
+    // }
+
+    // else (a13 % 2 == !0)
+
+    // { console.log("odd"); }
+
+
+
+    // Q.17 Write find maximum number among 3 numbers using ternary operator in JS?
+
+    // let a = parseInt(prompt("enter your value"));
+    // let b = parseInt(prompt("enter your second value"));
+    // let c = parseInt(prompt("enter your thierd value "));
+
+
+    // (a > b && a > c) ? (console.log(`${"a"} is maximum`)) :
+    // (a < b && b > c) ? (console.log(`${"b"} is maximum`)) :
+    //    console.log(`${"c"} is maximum`);
+
+    //    Q.18 Write to find minimum number among 3 numbers using ternary operator in JS?
+
+
+    // let a = parseInt(prompt("enter your value"));
+    // let b = parseInt(prompt("enter your second value"));
+    // let c = parseInt(prompt("enter your thierd value "));
+
+    // (a < b && a < c) ? (console.log(`${"a"} is minimum`)) :
+    // (a > b && b < c) ? (console.log(`${"b"} is minimum`)) :
+    //     (console.log(`${"c"} is minimum`))
+
+    // Q.19 Write to find the largest of three numbers in JS?
+
+
+    // let a = parseInt(prompt("eneter your value"))
+    // let b = parseInt(prompt("eneter your value"))
+    // let c = parseInt(prompt("eneter your value"))
+
+    // if (a > b && a > c) { console.log("a is largest number  "); }
+
+    // else if (a < b && b > c) { console.log("b is the largest number"); }
+
+    // else (console.log("c is the largest number"))
+
+    // Q.20 Write to show
+
+
+    // i.Monday to Sunday using switch case in JS ?
+
+    // let days = parseInt(prompt("enter the value to show day"))
+
+    // switch (days) {
+    //     case 1:
+    //         console.log("monday");
+    //         break;
+    //     case 2:
+    //         console.log("Tuseday");
+    //         break;
+    //     case 3:
+    //         console.log("wednesday");
+    //         break;
+    //     case 4:
+    //         console.log("thursday");
+    //         break;
+    //     case 5:
+    //         console.log("friday");
+    //         break;
+    //     case 6:
+    //         console.log("saturday");
+    //         break;
+    //     case 7:
+    //         console.log("sunady");
+    //         break;
+    //     default:
+    //         break;
+    // }
+
+
+    // ii. Vowel or Consonant using switch case in JS?
+
+
+
+    // let value = (prompt("enter the value to show day"))
+
+    // switch (value) {
+    //     case 'A':
+    //         console.log("Vowel");
+    //         break;
+    //     case 'I':
+    //         console.log("Vowel");
+    //         break;
+    //     case 'O':
+    //         console.log("Vowel");
+    //         break;
+    //     case "U":
+    //         console.log("Vowel");
+    //         break;
+    //     case 'E':
+    //         console.log("Vowel");
+    //         break;
+    //     case 'a':
+    //         console.log("Vowel");
+    //         break;
+    //     case 'i':
+    //         console.log("Vowel");
+    //         break;
+    //     case 'o':
+    //         console.log("Vowel");
+    //         break;
+    //     case 'u':
+    //         console.log("Vowel");
+    //         break;
+    //     case 'e':
+    //         console.log("Vowel");
+    //         break;
+    //     default:
+    //     console.log("Consonant");
+
+    // }
+
+    // Q.21 What are the looping structures in JavaScript? Any one Example?
+
+    // for loop: Used when the number of iterations is known.
+    // while loop: Used when the number of iterations is unknown and based on
+    //  a condition.
+    // do while loop: Similar to the while loop but ensures the code block is
+    // executed at least once.
+
+
+
+
+    // Q.31 Write a print 972 to 897 using for loop in JS?
+
+    // let a
+
+    // for (a = 1; a >= 897; a--);
+
+    // {
+    //     for (i = 972; i >= 897; i--)
+    //         {console.log(i);}
+    // }
+
+    // Q.23 Write to print factorial of given number?
+
+
+    // let number = 5;
+    // let factorial = 1;
+
+
+    // for (let i = 1; i <= number; i++) {
+    //     factorial *= i;
+    // }
+
+    // console.log(`The factorial of ${number} is ${factorial}`);
+
+    // Q.24 Write to print Fibonacci series up to given numbers?
+
+
+    // let n = 20
+    // let a = 0, b = 1
+    // for ( let i = 0; i < n; i++)
+    // { let ans = a + b
+    //     console.log(ans);
+    //     a=b
+    //     b=ans
+    //  }
+
+
+    // Q.25 Write to print number in reverse order e.g.: number = 64728 ---> reverse =82746 in JS?
+
+    //    let a =64728
+    //    console.log(a.reverse);
+
+
+    // Q.29 Use pattern in console.log in JS?
+
+
+    // 1) 1
+    // 1 0
+    // 1 0 1
+    // 1 0 1 0
+    // 1 0 1 0 1
+
+    // let a
+    // let b
+
+    // for (a = 1; a <= 5; a++) {
+    //     for (b = 1; b <= a; b++) {
+
+    //         if (b % 2 == 0) { document.write("0") }
+
+    //         else { document.write("1") }
+    //     }
+    //     document.write(`<br>`)
+    // }
+
+    //   2)            A
+    //                 B C D
+    //                 E F
+    //                 G H I J
+    //                 K L M N O
+    // let a = ""
+    // let count = 0;
+
+    // for (let m = 0; m <= 4; m++) {
+    //     for (let n = 0; n <= m; n++) {
+    //         a = String.fromCharCode(count + 65);
+    //         count++;
+    //         document.write(`${a}`);
+    //     }
+    //     document.write("<br>");
+
+    // }
+
+
+
+    // 3)  1
+    //     2 3
+    //     4 5 6
+    //     7 8 9 10
+    //     11 12 13 14 15
+
+
+    // let c = 1
+
+    // for (a = 0; a <= 4; a++) {
+    //     for (b = 0; b <= a; b++) {
+
+    //         document.write(`${c}`)
+    //         c++
+    //     }
+
+    //     document.write(`<br>`)
+    // }
+    // 4)  *
+    //     * *
+    //     * * *
+    //     * * * *
+    //     * * * * *
+
+
+
+    // for (a = 0; a <= 4; a++) {
+    //     for (b = 0; b <= a; b++) {
+
+    //         document.write("*")
+
+    //     }
+
+    //     document.write(`<br>`)
+    // }
+    // Q.31 Write a JavaScript Program to display the current day and time in the following
+
+
+
+
+
+    //  function getdate()
+    //  {
+    //     let xyz  = new Date();
+    //     document.getElementById('dt').innerHTML = xyz
+    //  }
+
+    //  setInterval(getdate,1000)
+
+    // Q.32 Write a JavaScript program to get the current date?
+
+    // function getdate()
+    //             {
+    //     let xyz  = new Date();
+    //     document.getElementById('dt').innerHTML = xyz
+    //  }
+    //  getdate()
+
+    // Q.33 Write a JavaScript program to compare two objects?
+
+
+
+    // Q.35 Write a JavaScript program to capitalize first letter of a string?
+
+    // let a = "sagarjain"
+    // // console.log(a.toUpperCase);
+    // let b = a[0].toUpperCase() + a.slice(1);
+    // console.log(b);
+
+    // Q. 45 Write a JavaScript program to determine if a variable is array ?
+
+    // let a = ["sagar", "jain"]
+    // console.log(a)
+
+
+    // Q.46 Write a JavaScript program to clone an array?.
+
+    // function cloneArray(arr) {
+    //     let newArray = [];  // Create a new empty array
+
+    //     for (let i = 0; i < arr.length; i++) {
+    //         newArray[i] = arr[i];  // Copy each element to the new array
+    //     }
+
+    //     return newArray;  // Return the new cloned array
+    // }
+
+    // const originalArray = [1, 2, 3, 4];
+    // const clonedArray = cloneArray(originalArray);
+
+    // console.log(clonedArray);
+
+
+    // Q.47 What is the drawback of declaring methods directly in JavaScript objects?
+
+    // Problem: When you declare methods directly within an object, each instance of that object will have its own copy of the method. This leads to unnecessary duplication in memory, especially when creating many instances of the object.
+
+    // Q.48 Print the length of the string on the browser console using console.log()?
+
+
+    // let a = "good morning"
+
+    // console.log(a.length);
+
+    // ans== 12
+
+
+
+    // Q.49 Change all the string characters to capital letters using toUpperCase() method?
+
+    // let a = "good moring"
+    // let b = a.toUpperCase()
+
+    // console.log(b);
+
+    // Q.51 Write a JavaScript program to get the current date. Expected Output : mm-ddyyyy, mm/dd/yyyy or dd-mm-yyyy, dd/mm/yyyy?
+
+    //  function getdate()
+    //  {
+    //     let xyz  = new Date();
+    //     document.getElementById('dt').innerHTML = xyz
+    //  }
+
+    //  setInterval(getdate,1000)
+
+
+    //          Q.52 Use indexOf to determine the position of the first occurrence of a in 30 Days
+    // Of JavaScript ?
+
+
+    // let a = "30 Days Of JavaScript";
+    // let b = a.indexOf('a');
+    // console.log(b);
+
+
+    // Q, 53 Use lastIndexOf to determine the position of the last occurrence of a in 30 Days Of
+    // JavaScript ?
+
+    // let a = "30 Days Of JavaScript";
+    // let b = a.lastIndexOf('a');
+    // console.log(b);
+
+    // .54 Form Validtion in JS?
+
+    // Form validation in JavaScript ensures that the data entered by a user in a web form meets the required format and constraints before submitting the form. It helps prevent errors, provides immediate feedback, and enhances the user experience
+
+    // Q.55 Form in Email, number, Password, Validation?
+
+
+    //         document.getElementById("registrationForm").addEventListener("submit", function(event) {
+
+    //     event.preventDefault();
+
+
+    //     document.getElementById("errorMessage").textContent = "";
+
+    //     let email = document.getElementById("email").value;
+    //     let phone = document.getElementById("phone").value;
+    //     let password = document.getElementById("password").value;
+
+    //     if (!validateEmail(email)) {
+    //         document.getElementById("errorMessage").textContent = "Please enter a valid email address.";
+    //         return;
+    //     }
+
+
+    //     if (!validatePhoneNumber(phone)) {
+    //         document.getElementById("errorMessage").textContent = "Please enter a valid 10-digit phone number.";
+    //         return;
+    //     }
+
+
+    //     if (!validatePassword(password)) {
+    //         document.getElementById("errorMessage").textContent = "Password must be at least 8 characters long, include a number, and a special character.";
+    //         return;
+    //     }
+
+
+    //     alert("Form submitted successfully!");
+    // });
+
+
+    // function validateEmail(email) {
+    //     let re = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
+    //     return re.test(email);
+    // }
+
+
+    // function validatePhoneNumber(phone) {
+    //     let re = /^\d{10}$/;
+    //     return re.test(phone);
+    // }
+
+
+    // function validatePassword(password) {
+    //     let re = /^(?=.*[0-9])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{8,}$/;
+    //     return re.test(password);
+    // }
+
+
+    // Q.56 Dynamic Form Validation in JS?
+
+
+
+
+
+    // Q.57 how many type of JS Event ? How to use it ?
+
+    // There are 9 event in Javascript
+    // 1   Mouse Events
+    // 2   Keyboard Events
+    // 3   Form Events
+    // 4   Window Events
+    // 5   Document Events
+    // 6   Clipboard Events
+    // 7   Drag Events
+    // 8   Media Events
+    // 9   Touch Events
+
+
+    // Q.60 What is Bom vs Dom in JS?
+
+
+    // In JavaScript, the BOM (Browser Object Model) and the DOM (Document Object Model) are two important concepts that deal with different aspects of web page interaction.
+
+    // Q.61 Array vs object defences in JS?
+
+    // In JavaScript, arrays and objects are two fundamental data structures used to store and manipulate collections of data. They have different structures, purposes, and ways of accessing and manipulating their contents.
+
+    // Q.62 Split the string into an array using split() Method ?
+
+    // let a = "hii hello 123"
+
+    //     let b = a.split(" ")
+    //     console.log(b);
+
+    // Q.63 Check if the string contains a word Script using includes() method?
+
+    // const str = "JavaScript is though!";
+    // const word = "Script";
+
+    // const containsWord = str.includes(word);
+
+    // console.log(containsWord);
+
+    // Q.66 copy to one string to another string in JS?
+
+
+    // let a = ["hii", "hello", "goodmorning"]
+
+    // let b=[a[1]]
+    // console.log(b);
+
+</script>
+
+
+</body>
+
+</html>
